@@ -9,15 +9,51 @@
 
 # Comandos
 
-### NPM
- - npm init (Cria o package.json com as configurações iniciais do projeto)
- - npm run [nome do script] (Roda o comando definido no script do package.jsonn)
+### NPM (Node Package Manager)
+
+Verifica a versão do npm instalada
+```
+npm -v
+```
+
+Inicializa o gerenciador de pacotes em um novo projeto.
+```
+npm init
+```
+
+Instala um novo pacote
+```
+npm i [nome-do-pacote]
+```
+
+Instala um novo pacote como dependencia de dev
+```
+npm i [nome-do-pacote] -D
+```
+Rodar os scripts do package json
+```
+npm run [nome do script]
+```
 
 ### GIT
 
-- git config --global user.name "Nome Usuario" (Configura o nome de usuario para commitar as mudanças)
-- git config --global user.email "Email usuario" (Configura o email do usuario para commitar as mudanças)
-- git config --list
+Configura o nome de usuario para commitar as mudanças
+```
+- git config --global user.name "Nome Usuario"
+```
 
+Configura o email do usuario para commitar as mudanças
+```
+- git config --global user.email "Email usuario"
+```
+---
+```
+- git config --list
+```
+---
+```
 - git init
+```
+---
+```
 - git remote add origin https://github.com/Shiibo/api_node_express.git

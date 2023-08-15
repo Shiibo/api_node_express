@@ -1,12 +1,15 @@
+//const express = require('express')
 import express from 'express'
-import {PORT} from './config.js'
+import userRouter from './routes/userRouter.js'
 
-const app = express();
+const api = express()
 
-app.get('/', (req, res)=>{
-    res.json({message: "Bem-vindo a API"})
+api.get('/', (req, res) => {
+    res.json({message: "Bem-vindo a nossa API"})
 })
 
-app.listen(PORT, () => {
-    console.log(`Servidor rodando na porta http://localhost:${PORT}`)
+api.use('/user', userRouter)
+
+api.listen(3000, () => {
+    console.log('Servidor rodando na porta 3000! http://localhost:3000')
 })
